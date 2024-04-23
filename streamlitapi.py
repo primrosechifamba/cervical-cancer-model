@@ -6,9 +6,7 @@ from tensorflow.keras.models import load_model
 
     # Replace 'your_model.h5' with your actual model file path
 #model = load_model('cervical_cancer_detection_model.h5')
-from custom_module import CustomLayer
-custom_objects = {'CustomLayer': CustomLayer}
-model = load_model('cervical_cancer_detection_model.h5', custom_objects=custom_objects)
+
 
 st.title("cervical Cancer Detection Model")
     
